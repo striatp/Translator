@@ -1,7 +1,7 @@
-const token = require("./config.local.js");
+const { Token } = require("./config.local.js");
 
 module.exports = {
-  botToken: token,
+  botToken: Token,
   theme: {
     colors: {
       primaryColor: "#FFFFFF",
