@@ -1,4 +1,9 @@
 module.exports = {
-  token: "...",
-  t: "hh"
+  token: "bot-token",
+  ressources: {
+    colors: {
+      primary: "#FFFFFF",
+      secondary: "#FF00FF"
+    }
+  }
 }
