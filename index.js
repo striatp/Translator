@@ -24,8 +24,8 @@ const client = new ForgeClient({
 })
    
 // Load the commands
-client.commands.load("commands")
-client.applicationCommands.load("applications")
+client.commands.load("src/commands")
+client.applicationCommands.load("src/applications")
    
 // Your bot token
 client.login(Token);
