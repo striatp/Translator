@@ -1,6 +1,7 @@
 const { ForgeClient } = require("@tryforge/forgescript");
 const { ForgeDB } = require("@tryforge/forge.db");
 const { Token } = require("./config.local.js");
+
 // Client initialization
 const client = new ForgeClient({
     "intents": [
