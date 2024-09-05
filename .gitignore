@@ -1,1 +1,2 @@
-config.js
+# Ignore local configuration files
+config.local.js
