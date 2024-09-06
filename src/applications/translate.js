@@ -5,7 +5,9 @@ module.exports = {
     integration_types: [1],
     contexts: [0, 1, 2]
   },
-  code: `$interactionReply[
+  code: `
+  $log[New Translation by $username ($authorID), in $guildName ($guildID), $channelName[$guildID;$channelID] ($channelID) on message $messageID]
+  $interactionReply[
     $ephemeral
     hello
   ]`
