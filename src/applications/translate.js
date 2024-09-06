@@ -6,7 +6,7 @@ module.exports = {
     contexts: [0, 1, 2]
   },
   code: `
-  $log[$channelID]
+  $log[New Translation by $username ($authorID), in $guildName ($guildID), on message $option[message]]
   $interactionReply[
     $ephemeral
     hello
