@@ -6,9 +6,9 @@ module.exports = {
     contexts: [0, 1, 2]
   },
   code: `
-  $log[New Translation by $username ($authorID), in $guildName ($guildID), on message $option[message]]
   $interactionReply[
     $ephemeral
-    hello
+    $!httpRequest[https://api.kastg.xyz/api/tool/translate?input=$getMessage[$channelID;$messageID;content]&to=$locale&from=auto;GET]
+    $httpResult[result;0;output]
   ]`
 }
