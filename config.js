@@ -1,11 +1,10 @@
-const { config } = require("./config.local.js");
+const config = require("./config.local.js");
 
 module.exports = {
   botToken: config.token,
   theme: {
-    colors: {
-      primaryColor: "#FFFFFF",
-      secondaryColor: "#FF00FF"
+    embed_colors: {
+      primaryColor: "#FFFFFF"
     }
   }
 };
