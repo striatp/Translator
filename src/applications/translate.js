@@ -9,5 +9,6 @@ module.exports = {
   $interactionReply[
     $ephemeral
     $djsEval[ctx.interaction.channelId]
+    $option[message]
   ]`
 }
