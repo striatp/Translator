@@ -8,7 +8,7 @@ module.exports = {
   code: `
   $interactionReply[
     $ephemeral
-    $!httpRequest[https://api.kastg.xyz/api/tool/translate?input=$getMessage[$channelID;$option[message];content]&to=$locale&from=auto;GET]
+    $!httpRequest[https://api.kastg.xyz/api/tool/translate?input=$getMessage[$channelName;$option[message];content]&to=$locale&from=auto;GET]
     $httpResult[result;0;output]
   ]`
 }
