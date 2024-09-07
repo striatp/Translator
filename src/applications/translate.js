@@ -1,3 +1,6 @@
+const config = require("../../config.local.js");
+const bot_token = config.token
+
 module.exports = {
   data: {
     name: "Translate Message",
@@ -8,7 +11,10 @@ module.exports = {
   code: `
   $interactionReply[
     $ephemeral
-    $djsEval[ctx.interaction.channelId]
-    $option[message]
+    $let[channelId;$djsEval[ctx.interaction.channelId]]
+    $let[messageId;$option[message]]
+
+    $httpAddHeader[Authorization: `Bearer ${bot_token}`]
+    $!httpRequest[https://discord.com/api/v10/channels/$get[channelId]/messages/$get[messageId];GET]
   ]`
 }
