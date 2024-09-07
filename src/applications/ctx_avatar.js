@@ -4,7 +4,7 @@ const primaryColor = `${config.theme.embed_colors.primaryColor}`
 module.exports = {
   data: {
     // Display a member's avatar with a user context menu command."
-    name: "Avatar",
+    name: "User Avatar",
     type: 2
   },
   code: `
