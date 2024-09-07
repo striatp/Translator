@@ -16,5 +16,6 @@ module.exports = {
 
     $httpAddHeader[Authorization;Bot ${bot_token}]
     $!httpRequest[https://discord.com/api/v10/channels/$get[channelId]/messages/$get[messageId];GET]
+    $httpResult
   ]`
 }
