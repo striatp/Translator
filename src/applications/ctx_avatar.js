@@ -1,3 +1,6 @@
+const config = require("../../config.js");
+const primary = `${config.embed_colors.primary}`
+
 module.exports = {
   data: {
     // Display a member's avatar with a user context menu command."
@@ -6,6 +9,13 @@ module.exports = {
   },
   code: `
   $let[user;$option[user]]
+  $onlyIf[$userExists[$get[user]]==true;
+    $interactionReply[
+      $ephemeral
+      $description[This user does not exist.]
+      $color[${primary}]
+    ]
+  ]
   $interactionReply[
     $ephemeral
     $attachment[$userAvatar[$get[user]];avatar.png]
