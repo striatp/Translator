@@ -14,7 +14,7 @@ module.exports = {
     $let[channelId;$djsEval[ctx.interaction.channelId]]
     $let[messageId;$option[message]]
 
-    $httpAddHeader[Authorization: Bot ${bot_token}]
+    $httpAddHeader[Authorization;Bot ${bot_token}]
     $!httpRequest[https://discord.com/api/v10/channels/$get[channelId]/messages/$get[messageId];GET]
   ]`
 }
