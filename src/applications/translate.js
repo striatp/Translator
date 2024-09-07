@@ -1,5 +1,5 @@
 const config = require("../../config.local.js");
-const bot_token = config.token
+const bot_token = `${config.token}`
 
 module.exports = {
   data: {
@@ -14,7 +14,7 @@ module.exports = {
     $let[channelId;$djsEval[ctx.interaction.channelId]]
     $let[messageId;$option[message]]
 
-    $httpAddHeader[Authorization: `Bearer ${bot_token}`]
+    $httpAddHeader[Authorization: Bearer ${bot_token}]
     $!httpRequest[https://discord.com/api/v10/channels/$get[channelId]/messages/$get[messageId];GET]
   ]`
 }
