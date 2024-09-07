@@ -1,5 +1,5 @@
 {
-  "name": "Translator",
+  "name": "Pixxle",
   "type": "DiscordApplication",
   "version": "0.0.1",
   "dependencies": {
