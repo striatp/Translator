@@ -1,5 +1,5 @@
 const config = require("../../config.js");
-const primary = `${config.theme.embed_colors.primary}`
+const primaryColor = `${config.theme.embed_colors.primaryColor}`
 
 module.exports = {
   data: {
@@ -13,7 +13,7 @@ module.exports = {
     $interactionReply[
       $ephemeral
       $description[This user does not exist.]
-      $color[${primary}]
+      $color[${primaryColor}]
     ]
   ]
   $interactionReply[
