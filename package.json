@@ -3,6 +3,7 @@
   "type": "DiscordApplication",
   "version": "0.0.1",
   "dependencies": {
+    "@tryforge/forge.canvas": "^1.0.0",
     "@tryforge/forge.db": "^2.0.5",
     "@tryforge/forgescript": "github:tryforge/ForgeScript#dev",
     "sqlite3": "^5.1.7"
