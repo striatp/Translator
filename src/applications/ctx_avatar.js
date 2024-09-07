@@ -1,5 +1,5 @@
 const config = require("../../config.js");
-const primary = `${config.embed_colors.primary}`
+const primary = `${config.theme.embed_colors.primary}`
 
 module.exports = {
   data: {
