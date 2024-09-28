@@ -1,11 +1,40 @@
 {
   "name": "Pixxle",
-  "type": "DiscordApplication",
   "version": "0.0.1",
+  "description": "A unique and feature-rich application for moderation, management and entertainment purposes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sébastien GARCIA (@striatp)",
+  "license": "MIT",
+  "type": "module",
   "dependencies": {
     "@tryforge/forge.canvas": "^1.0.0",
     "@tryforge/forge.db": "^2.0.5",
     "@tryforge/forgescript": "github:tryforge/ForgeScript#dev",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "discord.js": "^14.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "eslint": "^8.40.0",
+    "prettier": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "moderation",
+    "shadowban",
+    "automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/striatp/Pixxle.git"
   }
 }
