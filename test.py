@@ -1,1 +1,10 @@
 print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
+print("hello world"*99999);
