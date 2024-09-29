@@ -1,4 +1,5 @@
-
+const configs = require("../../../config.js")
+const english = require("../../../translations/en.json");
 
 module.exports = {
   data: {
@@ -9,10 +10,12 @@ module.exports = {
       {
         type: 7,
         name: "channel",
-        description: "",
+        description: `${english.option.description.select_channel}`,
         required: true
       }
     ]
   },
-  code: ``
+  code: `
+$onlyIf[$hasP]
+`
 }
