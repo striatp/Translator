@@ -1,5 +1,5 @@
 {
-    "Administrative Permissions": [
+    "management": [
         "Administrator",
         "BanMembers",
         "CreateInstantInvite",
@@ -16,7 +16,7 @@
         "ViewGuildInsights",
         "ViewCreatorMonetizationAnalytics"
     ],
-    "Channel Permissions": [
+    "channel": [
         "AddReactions",
         "AttachFiles",
         "ChangeNickname",
@@ -41,7 +41,7 @@
         "ViewChannel",
         "ViewGuildInsights"
     ],
-    "Voice Permissions": [
+    "voice": [
         "Connect",
         "DeafenMembers",
         "MoveMembers",
@@ -53,7 +53,7 @@
         "UseVAD",
         "SendVoiceMessages"
     ],
-    "Miscellaneous Permissions": [
+    "misc": [
         "CreateGuildExpressions",
         "ManageEmojisAndStickers",
         "UseApplicationCommands"
