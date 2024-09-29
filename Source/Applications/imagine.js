@@ -1,5 +1,5 @@
-const local = require("../../config.local.js");
-const api_key = ${local.credentials.api_key};
+const local = require("../config.local.js");
+const api_key = `${local.credentials.api_keys.pixart_sigma}`;
 
 module.exports = {
   data: {
@@ -88,11 +88,11 @@ module.exports = {
     ]
   },
   code: `
-$let[link;https://api.kastg.xyz/api/ai/pixart-sigma?prompt=$encodeURI[$option[prompt]]&style=$if[$option[style]==;no-style;$option[style]]&ratio=$if[$option[ratio]==;square;$option[ratio]]&key=${api_key}]
-$httpRequest[$get[link];GET]
-  $interactionReply[
   $ephemeral
   $defer
+$let[link;https://api.kastg.xyz/api/ai/pixart-sigma?prompt=$encodeURI[$option[prompt]]&n_p=(worst%20quality,%20low%20quality,%20normal%20quality,%20lowres,%20low%20details,%20oversaturated,%20undersaturated,%20overexposed,%20underexposed,%20grayscale,%20bw,%20bad%20photo,%20bad%20photography,%20bad%20art:1.4),%20(watermark,%20signature,%20text%20font,%20username,%20error,%20logo,%20words,%20letters,%20digits,%20autograph,%20trademark,%20name:1.2),%20(blur,%20blurry,%20grainy),%20morbid,%20ugly,%20asymmetrical,%20mutated%20malformed,%20mutilated,%20poorly%20lit,%20bad%20shadow,%20draft,%20cropped,%20out%20of%20frame,%20cut%20off,%20censored,%20jpeg%20artifacts,%20out%20of%20focus,%20glitch,%20duplicate,%20(airbrushed,%20cartoon,%20anime,%20semi-realistic,%20cgi,%20render,%20blender,%20digital%20art,%20manga,%20amateur:1.3),%20(3D%20,3D%20Game,%203D%20Game%20Scene,%203D%20Character:1.1),%20(bad%20hands,%20bad%20anatomy,%20bad%20body,%20bad%20face,%20bad%20teeth,%20bad%20arms,%20bad%20legs,%20deformities:1.3)&style=$if[$option[style]==;no-style;$option[style]]&ratio=$if[$option[ratio]==;square;$option[ratio]]&key=${api_key}]
+$!httpRequest[$get[link];GET]
+
   $httpResult[result;0;url]
 `
 }
