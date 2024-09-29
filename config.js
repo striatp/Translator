@@ -4,7 +4,7 @@ module.exports = {
   botToken: config.token,
   theme: {
     embed_colors: {
-      primaryColor: "#FFFFFF"
+      primaryColor: "#FF3C65"
     }
   }
 };
