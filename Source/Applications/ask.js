@@ -1,5 +1,5 @@
-const local = require("../../local.config.js");
-const api_key = ${local.api_key};
+const local = require("../../config.local.js");
+const api_key = ${local.credentials.api_key};
 
 module.exports = {
   data: {
@@ -88,10 +88,11 @@ module.exports = {
     ]
   },
   code: `
-$ephemeral
-$defer
 $let[link;https://api.kastg.xyz/api/ai/pixart-sigma?prompt=$encodeURI[$option[prompt]]&style=$if[$option[style]==;no-style;$option[style]]&ratio=$if[$option[ratio]==;square;$option[ratio]]&key=${api_key}]
-  $!httpRequest[$get[link];GET]
+$httpRequest[$get[link];GET]
+  $interactionReply[
+  $ephemeral
+  $defer
   $httpResult[result;0;url]
-  `
+`
 }
