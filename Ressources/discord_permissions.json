@@ -1,0 +1,61 @@
+{
+    "Administrative Permissions": [
+        "Administrator",
+        "BanMembers",
+        "CreateInstantInvite",
+        "KickMembers",
+        "ManageChannels",
+        "ManageEvents",
+        "ManageGuild",
+        "ManageGuildExpressions",
+        "ManageNicknames",
+        "ManageRoles",
+        "ManageWebhooks",
+        "ModerateMembers",
+        "ViewAuditLog",
+        "ViewGuildInsights",
+        "ViewCreatorMonetizationAnalytics"
+    ],
+    "Channel Permissions": [
+        "AddReactions",
+        "AttachFiles",
+        "ChangeNickname",
+        "Connect",
+        "CreatePrivateThreads",
+        "CreatePublicThreads",
+        "EmbedLinks",
+        "ManageMessages",
+        "ManageThreads",
+        "MentionEveryone",
+        "ReadMessageHistory",
+        "SendMessages",
+        "SendMessagesInThreads",
+        "SendPolls",
+        "SendTTSMessages",
+        "Stream",
+        "UseEmbeddedActivities",
+        "UseExternalApps",
+        "UseExternalEmojis",
+        "UseExternalSounds",
+        "UseExternalStickers",
+        "ViewChannel",
+        "ViewGuildInsights"
+    ],
+    "Voice Permissions": [
+        "Connect",
+        "DeafenMembers",
+        "MoveMembers",
+        "MuteMembers",
+        "PrioritySpeaker",
+        "RequestToSpeak",
+        "Speak",
+        "UseSoundboard",
+        "UseVAD",
+        "SendVoiceMessages"
+    ],
+    "Miscellaneous Permissions": [
+        "CreateGuildExpressions",
+        "ManageEmojisAndStickers",
+        "UseApplicationCommands"
+    ]
+}
