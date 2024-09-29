@@ -1,4 +1,3 @@
-const permission = require("../../../Ressources/discord_permissions.json");
 const configs = require("../../../config.js")
 const english = require("../../../Ressources/Translations/en.json");
 
