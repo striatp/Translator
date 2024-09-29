@@ -1,0 +1,8 @@
+{
+  "option": {
+    "descriptions": {
+      "select_user": "Please select a user.",
+      "select_channel": "Please select a channel."
+    }
+  }
+}
