@@ -31,7 +31,15 @@ $onlyIf[$httpRequest[$get[link];GET]==200;
 ]
 
 $interactionReply[
-  $httpResult[result;0;response]
+  $let[result;httpResult[result;0;response]]
+  $ifx[
+    $if[$charCount[$get[result]]>2000;
+      $cropText[$get[result];;1997]...
+    ]
+    $else[
+      $get[result]
+    ]
+  ]
 ]
 `
 }
