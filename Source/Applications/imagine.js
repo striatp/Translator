@@ -103,7 +103,7 @@ $onlyIf[$httpRequest[$get[link];GET]==200;
 $let[ExecutionTime;$sub[$executionTime;$get[ExecutionTimeA]]]
 
 $interactionReply[
-  🪄 **Prompt** : "$option[prompt]" *($round[$get[ExecutionTime];2])*
+  🪄 **Prompt** : "$option[prompt]" *(Generated in $round[$math[$get[ExecutionTime]/1000];2] seconds)*
   $attachment[$httpResult[result;0;url];image.png]
 ]
 `
